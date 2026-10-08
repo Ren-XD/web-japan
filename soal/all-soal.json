@@ -1,0 +1,199 @@
+{
+    "soal": [
+        {
+            "q": "わたし",
+            "a": ["Saya", "Kamu", "Dia", "Mereka"],
+            "c": 0
+        },
+        {
+            "q": "あなた",
+            "a": ["Saya", "Kamu", "Guru", "Teman"],
+            "c": 1
+        },
+        {
+            "q": "せんせい",
+            "a": ["Guru", "Siswa", "Teman", "Orang"],
+            "c": 0
+        },
+        {
+            "q": "がくせい",
+            "a": ["Guru", "Siswa", "Dokter", "Pegawai"],
+            "c": 1
+        },
+        {
+            "q": "ともだち",
+            "a": ["Teman", "Keluarga", "Guru", "Orang"],
+            "c": 0
+        },
+        {
+            "q": "ひと",
+            "a": ["Orang", "Teman", "Anak", "Guru"],
+            "c": 0
+        },
+        {
+            "q": "ほん",
+            "a": ["Buku", "Meja", "Kursi", "Tas"],
+            "c": 0
+        },
+        {
+            "q": "つくえ",
+            "a": ["Kursi", "Meja", "Buku", "Pintu"],
+            "c": 1
+        },
+        {
+            "q": "いす",
+            "a": ["Meja", "Kursi", "Buku", "Tas"],
+            "c": 1
+        },
+        {
+            "q": "かばん",
+            "a": ["Tas", "Buku", "Sepatu", "Dompet"],
+            "c": 0
+        },
+        {
+            "q": "えんぴつ",
+            "a": ["Pensil", "Pulpen", "Penghapus", "Penggaris"],
+            "c": 0
+        },
+        {
+            "q": "けしゴム",
+            "a": ["Penggaris", "Pensil", "Penghapus", "Buku"],
+            "c": 2
+        },
+        {
+            "q": "がっこう",
+            "a": ["Rumah", "Sekolah", "Kantor", "Toko"],
+            "c": 1
+        },
+        {
+            "q": "うち",
+            "a": ["Rumah", "Sekolah", "Kamar", "Kantor"],
+            "c": 0
+        },
+        {
+            "q": "くるま",
+            "a": ["Sepeda", "Kereta", "Mobil", "Bus"],
+            "c": 2
+        },
+        {
+            "q": "でんしゃ",
+            "a": ["Mobil", "Kereta", "Pesawat", "Kapal"],
+            "c": 1
+        },
+        {
+            "q": "じてんしゃ",
+            "a": ["Sepeda", "Motor", "Mobil", "Kereta"],
+            "c": 0
+        },
+        {
+            "q": "みず",
+            "a": ["Air", "Teh", "Kopi", "Susu"],
+            "c": 0
+        },
+        {
+            "q": "ごはん",
+            "a": ["Air", "Nasi / Makanan", "Roti", "Daging"],
+            "c": 1
+        },
+        {
+            "q": "おはようございます",
+            "a": ["Selamat pagi", "Selamat siang", "Selamat malam", "Selamat tinggal"],
+            "c": 0
+        },
+        {
+            "q": "こんにちは",
+            "a": ["Selamat pagi", "Selamat siang", "Selamat malam", "Selamat tinggal"],
+            "c": 1
+        },
+        {
+            "q": "こんばんは",
+            "a": ["Selamat pagi", "Selamat siang", "Selamat malam", "Selamat tinggal"],
+            "c": 2
+        },
+        {
+            "q": "ありがとう",
+            "a": ["Maaf", "Terima kasih", "Permisi", "Sama-sama"],
+            "c": 1
+        },
+        {
+            "q": "すみません",
+            "a": ["Terima kasih", "Selamat tinggal", "Maaf / Permisi", "Selamat makan"],
+            "c": 2
+        },
+        {
+            "q": "さようなら",
+            "a": ["Selamat pagi", "Selamat makan", "Selamat tinggal", "Terima kasih"],
+            "c": 2
+        },
+        {
+            "q": "いただきます",
+            "a": ["Selamat tidur", "Selamat makan", "Selamat pagi", "Selamat jalan"],
+            "c": 1
+        },
+        {
+            "q": "ごちそうさまでした",
+            "a": ["Selamat makan", "Terima kasih atas makanannya", "Selamat tinggal", "Maaf"],
+            "c": 1
+        },
+        {
+            "q": "たべる",
+            "a": ["Minum", "Makan", "Tidur", "Pergi"],
+            "c": 1
+        },
+        {
+            "q": "のむ",
+            "a": ["Makan", "Minum", "Membaca", "Menulis"],
+            "c": 1
+        },
+        {
+            "q": "ねる",
+            "a": ["Bangun", "Tidur", "Pergi", "Datang"],
+            "c": 1
+        },
+        {
+            "q": "おきる",
+            "a": ["Bangun", "Tidur", "Makan", "Pulang"],
+            "c": 0
+        },
+        {
+            "q": "いく",
+            "a": ["Datang", "Pulang", "Pergi", "Melihat"],
+            "c": 2
+        },
+        {
+            "q": "くる",
+            "a": ["Datang", "Pergi", "Pulang", "Tidur"],
+            "c": 0
+        },
+        {
+            "q": "かえる",
+            "a": ["Datang", "Pergi", "Pulang", "Makan"],
+            "c": 2
+        },
+        {
+            "q": "みる",
+            "a": ["Mendengar", "Berbicara", "Melihat", "Menulis"],
+            "c": 2
+        },
+        {
+            "q": "きく",
+            "a": ["Mendengar / Bertanya", "Melihat", "Membaca", "Menulis"],
+            "c": 0
+        },
+        {
+            "q": "はなす",
+            "a": ["Membaca", "Berbicara", "Mendengar", "Menulis"],
+            "c": 1
+        },
+        {
+            "q": "よむ",
+            "a": ["Menulis", "Berbicara", "Membaca", "Melihat"],
+            "c": 2
+        },
+        {
+            "q": "かく",
+            "a": ["Membaca", "Menulis", "Mendengar", "Berbicara"],
+            "c": 1
+        }
+    ]
+}
