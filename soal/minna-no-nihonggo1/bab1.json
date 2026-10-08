@@ -1,0 +1,99 @@
+{
+    "soal": [
+        {
+            "q": "わたし",
+            "a": ["Saya", "Kamu", "Guru", "Teman"],
+            "c": 0
+        },
+        {
+            "q": "あなた",
+            "a": ["Saya", "Kamu", "Guru", "Teman"],
+            "c": 1
+        },
+        {
+            "q": "せんせい",
+            "a": ["Siswa", "Guru", "Teman", "Orang"],
+            "c": 1
+        },
+        {
+            "q": "がくせい",
+            "a": ["Guru", "Siswa", "Dokter", "Teman"],
+            "c": 1
+        },
+        {
+            "q": "ともだち",
+            "a": ["Teman", "Guru", "Orang", "Keluarga"],
+            "c": 0
+        },
+        {
+            "q": "ひと",
+            "a": ["Buku", "Orang", "Rumah", "Sekolah"],
+            "c": 1
+        },
+        {
+            "q": "ほん",
+            "a": ["Buku", "Meja", "Kursi", "Pensil"],
+            "c": 0
+        },
+        {
+            "q": "つくえ",
+            "a": ["Kursi", "Meja", "Tas", "Buku"],
+            "c": 1
+        },
+        {
+            "q": "いす",
+            "a": ["Meja", "Kursi", "Rumah", "Mobil"],
+            "c": 1
+        },
+        {
+            "q": "かばん",
+            "a": ["Tas", "Buku", "Sepeda", "Pensil"],
+            "c": 0
+        },
+        {
+            "q": "えんぴつ",
+            "a": ["Penghapus", "Pensil", "Buku", "Meja"],
+            "c": 1
+        },
+        {
+            "q": "けしゴム",
+            "a": ["Pensil", "Penghapus", "Tas", "Kursi"],
+            "c": 1
+        },
+        {
+            "q": "がっこう",
+            "a": ["Rumah", "Sekolah", "Kantor", "Toko"],
+            "c": 1
+        },
+        {
+            "q": "うち",
+            "a": ["Sekolah", "Rumah", "Kantor", "Stasiun"],
+            "c": 1
+        },
+        {
+            "q": "くるま",
+            "a": ["Kereta", "Sepeda", "Mobil", "Bus"],
+            "c": 2
+        },
+        {
+            "q": "でんしゃ",
+            "a": ["Mobil", "Sepeda", "Kereta", "Pesawat"],
+            "c": 2
+        },
+        {
+            "q": "じてんしゃ",
+            "a": ["Sepeda", "Mobil", "Kereta", "Motor"],
+            "c": 0
+        },
+        {
+            "q": "みず",
+            "a": ["Air", "Nasi", "Teh", "Kopi"],
+            "c": 0
+        },
+        {
+            "q": "ごはん",
+            "a": ["Air", "Roti", "Nasi / makanan", "Buah"],
+            "c": 2
+        }
+    ]
+}
