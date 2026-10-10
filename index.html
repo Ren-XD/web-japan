@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    >
+
+    <title>Kuis Kosakata - RennX Japan</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<main class="app">
+
+    <!-- =====================================
+         MENU UTAMA
+    ====================================== -->
+
+    <section id="menuScreen" class="screen active">
+
+        <div class="logo-badge">
+            <svg
+                viewBox="0 0 24 24"
+                width="30"
+                height="30"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+            >
+                <rect x="4" y="3" width="16" height="18" rx="2.5" />
+                <path d="M8 8h8" />
+                <path d="M8 12h8" />
+                <path d="M8 16h5" />
+            </svg>
+        </div>
+
+        <p class="brand">RENN X JAPAN</p>
+
+        <h1>Kuis Kosakata</h1>
+
+        <p class="subtitle">
+            Pilih kosakata yang ingin kamu pelajari.
+        </p>
+
+        <div class="chapter-list">
+
+            <!-- ALL KOSAKATA -->
+            <!-- Diubah agar membuka menu pilihan, bukan langsung kuis -->
+
+            <button
+                type="button"
+                class="chapter featured"
+                data-open-menu="all"
+            >
+                <span class="chapter-text">
+                    <strong>All Kosakata</strong>
+                    <small>Gabungan semua bab</small>
+                </span>
+
+                <svg
+                    class="chevron"
+                    viewBox="0 0 24 24"
+                    width="22"
+                    height="22"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                >
+                    <path d="M9 5l7 7-7 7" />
+                </svg>
+            </button>
+
+            <!-- MINNA 1 -->
+
+            <button
+                type="button"
+                class="chapter"
+                data-open-menu="mnn1"
+            >
+                <span class="chapter-text">
+                    <strong>Minna No Nihonggo 1</strong>
+                    <small>Bab 1 - 25</small>
+                </span>
+
+                <svg
+                    class="chevron"
+                    viewBox="0 0 24 24"
+                    width="22"
+                    height="22"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                >
+                    <path d="M9 5l7 7-7 7" />
+                </svg>
+            </button>
+
+            <!-- MINNA 2 -->
+
+            <button
+                type="button"
+                class="chapter"
+                data-open-menu="mnn2"
+            >
+                <span class="chapter-text">
+                    <strong>Minna No Nihonggo 2</strong>
+                    <small>Bab 1 - 25</small>
+                </span>
+
+                <svg
+                    class="chevron"
+                    viewBox="0 0 24 24"
+                    width="22"
+                    height="22"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                >
+                    <path d="M9 5l7 7-7 7" />
+                </svg>
+            </button>
+
+        </div>
+
+        <p class="timer-note">
+            <svg
+                viewBox="0 0 24 24"
+                width="22"
+                height="22"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+            >
+                <circle cx="12" cy="13" r="8" />
+                <path d="M12 9v4l2.5 2" />
+                <path d="M9.5 2.5h5" />
+            </svg>
+
+            Setiap soal memiliki waktu 10 detik
+        </p>
+
+    </section>
+
+
+    <!-- =====================================
+         MENU PILIHAN ALL KOSAKATA
+    ====================================== -->
+
+    <section id="allMenuScreen" class="screen">
+
+        <div class="chapter-page">
+
+            <div class="chapter-menu-header">
+
+                <button
+                    type="button"
+                    class="back-menu"
+                    data-back-menu
+                    aria-label="Kembali ke menu utama"
+                >
+                    ‹
+                </button>
+
+                <div>
+                    <p class="brand">RENN X JAPAN</p>
+
+                    <h2>Latihan Kosakata</h2>
+
+                    <p class="subtitle">
+                        Pilih mode latihan yang ingin kamu gunakan.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="chapter-list">
+
+                <!-- MULAI MENGHAFAL -->
+
+                <button
+                    type="button"
+                    class="chapter"
+                    data-all-mode="memorize"
+                >
+                    <span class="chapter-text">
+                        <strong>Mulai Menghafal</strong>
+                        <small>Pelajari kosakata baru dari awal.</small>
+                    </span>
+
+                    <svg
+                        class="chevron"
+                        viewBox="0 0 24 24"
+                        width="22"
+                        height="22"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <path d="M9 5l7 7-7 7" />
+                    </svg>
+                </button>
+                
+                <!-- SOALAN ACAK -->
+
+                <button
+                    type="button"
+                    class="chapter"
+                    data-all-mode="random"
+                >
+                    <span class="chapter-text">
+                        <strong>Soalan Acak</strong>
+                        <small>Dapatkan soal secara acak.</small>
+                    </span>
+
+                    <svg
+                        class="chevron"
+                        viewBox="0 0 24 24"
+                        width="22"
+                        height="22"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <path d="M9 5l7 7-7 7" />
+                    </svg>
+                </button>
+
+                <!-- ULANGI KOSAKATA YANG SALAH -->
+
+                <button
+                    type="button"
+                    class="chapter"
+                    data-all-mode="repeat-wrong"
+                >
+                    <span class="chapter-text">
+                        <strong>Ulangi Kosakata Yang Salah</strong>
+                        <small>Fokus pada kosakata yang masih salah.</small>
+                    </span>
+
+                    <svg
+                        class="chevron"
+                        viewBox="0 0 24 24"
+                        width="22"
+                        height="22"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <path d="M9 5l7 7-7 7" />
+                    </svg>
+                </button>
+
+                <!-- TABEL KOSAKATA -->
+
+                <button
+                    type="button"
+                    class="chapter"
+                    data-all-mode="table"
+                >
+                    <span class="chapter-text">
+                        <strong>Tabel Koakata</strong>
+                        <small>Lihat daftar kosakata lengkap.</small>
+                    </span>
+
+                    <svg
+                        class="chevron"
+                        viewBox="0 0 24 24"
+                        width="22"
+                        height="22"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <path d="M9 5l7 7-7 7" />
+                    </svg>
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+         MINNA NO NIHONGGO 1
+    ====================================== -->
+
+    <section id="mnn1Screen" class="screen">
+
+        <div class="chapter-page">
+
+            <div class="chapter-menu-header">
+
+                <button
+                    type="button"
+                    class="back-menu"
+                    data-back-menu
+                >
+                    ‹
+                </button>
+
+                <div>
+                    <p class="brand">RENN X JAPAN</p>
+
+                    <h2>Minna No Nihonggo 1</h2>
+
+                    <p class="subtitle">
+                        Pilih bab yang ingin kamu pelajari.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="bab-list">
+                <button type="button" class="bab-button" data-chapter="m1-bab1">Bab 1 <span>›</span></button>
+                <button type="button" class="bab-button" data-chapter="m1-bab2">Bab 2 <span>›</span></button>
+                <button type="button" class="bab-button" data-chapter="m1-bab3">Bab 3 <span>›</span></button>
+                <button type="button" class="bab-button" data-chapter="m1-bab4">Bab 4 <span>›</span></button>
+                <button type="button" class="bab-button" data-chapter="m1-bab5">Bab 5 <span>›</span></button>
+
+                <button type="button" class="bab-button" data-chapter="m1-bab6">Bab 6 <span>›</span></button>
+                <button type="button" class="bab-button" data-chapter="m1-bab7">Bab 7 <span>›</span></button>
+                <button type="button" class="bab-button" data-chapter="m1-bab8">Bab 8 <span>›</span></button>
+                <button type="button" class="bab-button" data-chapter="m1-bab9">Bab 9 <span>›</span></button>
+                <button type="button" class="bab-button" data-chapter="m1-bab10">Bab 10 <span>›</span></button>
+
+                <button type="button" class="bab-button" data-chapter="m1-bab11">Bab 11 <span>›</span></button>
+                <button type="button" class="bab-button" data-chapter="m1-bab12">Bab 12 <span>›</span></button>
+                <button type="button" class="bab-button" data-chapter="m1-bab13">Bab 13 <span>›</span></button>
+                <button type="button" class="bab-button" data-chapter="m1-bab14">Bab 14 <span>›</span></button>
+                <button type="button" class="bab-button" data-chapter="m1-bab15">Bab 15 <span>›</span></button>
+
+                <button type="button" class="bab-button" data-chapter="m1-bab16">Bab 16 <span>›</span></button>
+                <button type="button" class="bab-button" data-chapter="m1-bab17">Bab 17 <span>›</span></button>
+                <button type="button" class="bab-button" data-chapter="m1-bab18">Bab 18 <span>›</span></button>
+                <button type="button" class="bab-button" data-chapter="m1-bab19">Bab 19 <span>›</span></button>
+                <button type="button" class="bab-button" data-chapter="m1-bab20">Bab 20 <span>›</span></button>
+
+                <button type="button" class="bab-button" data-chapter="m1-bab21">Bab 21 <span>›</span></button>
+                <button type="button" class="bab-button" data-chapter="m1-bab22">Bab 22 <span>›</span></button>
+                <button type="button" class="bab-button" data-chapter="m1-bab23">Bab 23 <span>›</span></button>
+                <button type="button" class="bab-button" data-chapter="m1-bab24">Bab 24 <span>›</span></button>
+                <button type="button" class="bab-button" data-chapter="m1-bab25">Bab 25 <span>›</span></button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+         MINNA NO NIHONGGO 2
+    ====================================== -->
+
+    <section id="mnn2Screen" class="screen">
+
+        <div class="chapter-page">
+
+            <div class="chapter-menu-header">
+
+                <button
+                    type="button"
+                    class="back-menu"
+                    data-back-menu
+                >
+                    ‹
+                </button>
+
+                <div>
+                    <p class="brand">RENN X JAPAN</p>
+
+                    <h2>Minna No Nihonggo 2</h2>
+
+                    <p class="subtitle">
+                        Pilih bab yang ingin kamu pelajari.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="bab-list">
+                <button type="button" class="bab-button" data-chapter="m2-bab1">Bab 1 <span>›</span></button>
+                <button type="button" class="bab-button" data-chapter="m2-bab2">Bab 2 <span>›</span></button>
+                <button type="button" class="bab-button" data-chapter="m2-bab3">Bab 3 <span>›</span></button>
+                <button type="button" class="bab-button" data-chapter="m2-bab4">Bab 4 <span>›</span></button>
+                <button type="button" class="bab-button" data-chapter="m2-bab5">Bab 5 <span>›</span></button>
+
+                <button type="button" class="bab-button" data-chapter="m2-bab6">Bab 6 <span>›</span></button>
+                <button type="button" class="bab-button" data-chapter="m2-bab7">Bab 7 <span>›</span></button>
+                <button type="button" class="bab-button" data-chapter="m2-bab8">Bab 8 <span>›</span></button>
+                <button type="button" class="bab-button" data-chapter="m2-bab9">Bab 9 <span>›</span></button>
+                <button type="button" class="bab-button" data-chapter="m2-bab10">Bab 10 <span>›</span></button>
+
+                <button type="button" class="bab-button" data-chapter="m2-bab11">Bab 11 <span>›</span></button>
+                <button type="button" class="bab-button" data-chapter="m2-bab12">Bab 12 <span>›</span></button>
+                <button type="button" class="bab-button" data-chapter="m2-bab13">Bab 13 <span>›</span></button>
+                <button type="button" class="bab-button" data-chapter="m2-bab14">Bab 14 <span>›</span></button>
+                <button type="button" class="bab-button" data-chapter="m2-bab15">Bab 15 <span>›</span></button>
+
+                <button type="button" class="bab-button" data-chapter="m2-bab16">Bab 16 <span>›</span></button>
+                <button type="button" class="bab-button" data-chapter="m2-bab17">Bab 17 <span>›</span></button>
+                <button type="button" class="bab-button" data-chapter="m2-bab18">Bab 18 <span>›</span></button>
+                <button type="button" class="bab-button" data-chapter="m2-bab19">Bab 19 <span>›</span></button>
+                <button type="button" class="bab-button" data-chapter="m2-bab20">Bab 20 <span>›</span></button>
+
+                <button type="button" class="bab-button" data-chapter="m2-bab21">Bab 21 <span>›</span></button>
+                <button type="button" class="bab-button" data-chapter="m2-bab22">Bab 22 <span>›</span></button>
+                <button type="button" class="bab-button" data-chapter="m2-bab23">Bab 23 <span>›</span></button>
+                <button type="button" class="bab-button" data-chapter="m2-bab24">Bab 24 <span>›</span></button>
+                <button type="button" class="bab-button" data-chapter="m2-bab25">Bab 25 <span>›</span></button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+         QUIZ
+    ====================================== -->
+
+    <section id="quizScreen" class="screen">
+
+        <header class="quiz-top">
+
+            <button
+                id="backButton"
+                type="button"
+                class="icon-btn"
+                aria-label="Kembali"
+            >
+                ‹
+            </button>
+
+            <div class="quiz-meta">
+                <span id="chapterTitle">All Kosakata</span>
+                <span id="questionNumber">Soal 1 / 10</span>
+            </div>
+
+            <div id="timer" class="time-badge">
+                <span id="timerText">10</span>
+            </div>
+
+        </header>
+
+        <div class="time-track">
+            <div id="progressBar" class="time-bar"></div>
+        </div>
+
+        <div id="questionCard" class="question-card">
+            <p class="question-label">Apa arti kata ini?</p>
+
+            <div id="questionText" class="q-word">
+                こんにちは
+            </div>
+        </div>
+
+        <div id="answers" class="options"></div>
+
+        <div id="status" class="status"></div>
+
+    </section>
+
+
+    <!-- =====================================
+         HASIL
+    ====================================== -->
+
+    <section id="resultScreen" class="screen">
+
+        <p class="brand">Hasil kuis</p>
+
+        <h1>
+            <span id="scoreCorrect">0 / 10</span>
+        </h1>
+
+        <p class="subtitle" id="resultChapter"></p>
+
+        <p class="subtitle" id="scorePercent">0%</p>
+
+        <div class="stats">
+
+            <div class="stat">
+                <strong id="correctCount">0</strong>
+                <span>Benar</span>
+            </div>
+
+            <div class="stat">
+                <strong id="wrongCount">0</strong>
+                <span>Salah</span>
+            </div>
+
+            <div class="stat">
+                <strong id="timeoutCount">0</strong>
+                <span>Waktu habis</span>
+            </div>
+
+        </div>
+        
+        <div class="result-actions">
+    <button
+        type="button"
+        id="menuAgain"
+        class="btn-primary"
+    >
+        Kembali ke menu
+    </button>
+</div>
+
+        <!-- REKAP JAWABAN -->
+<div class="answer-recap">
+
+    <h2>Rekap Jawaban</h2>
+
+    <div class="recap-filters">
+        <button
+            type="button"
+            class="recap-filter active"
+            data-recap-filter="all"
+        >
+            Semua
+        </button>
+
+        <button
+            type="button"
+            class="recap-filter"
+            data-recap-filter="correct"
+        >
+            Benar
+        </button>
+
+        <button
+            type="button"
+            class="recap-filter"
+            data-recap-filter="wrong"
+        >
+            Salah
+        </button>
+
+        <button
+            type="button"
+            class="recap-filter"
+            data-recap-filter="timeout"
+        >
+            Waktu Habis
+        </button>
+    </div>
+
+    <div id="reviewList" class="review-list"></div>
+
+</div>
+
+    </section>
+    
+<!-- =====================================
+     TABEL KOSAKATA RENN X JAPAN
+====================================== -->
+
+<section id="tableScreen" class="screen table-screen">
+
+    <button
+        type="button"
+        class="table-back-button"
+        id="tableBackButton"
+        aria-label="Kembali"
+    >
+        &#8249;
+    </button>
+
+    <header class="table-heading">
+        <p class="table-brand">RENN X JAPAN</p>
+        <h1>Tabel Kosakata</h1>
+        <p class="table-subtitle">
+            Lihat dan pelajari semua kosakata dalam bentuk tabel.
+        </p>
+    </header>
+
+    <!-- Pencarian dan filter bab -->
+    <div class="table-toolbar">
+
+        <label class="table-search">
+            <span class="search-icon">&#9906;</span>
+            <input
+                type="search"
+                id="tableSearch"
+                placeholder="Cari kosakata..."
+                autocomplete="off"
+            >
+        </label>
+
+        <select id="tableChapterFilter" aria-label="Filter bab">
+            <option value="all">Semua Bab</option>
+        </select>
+
+    </div>
+
+    <!-- Tabel -->
+    <div class="vocab-table-wrapper">
+
+        <table class="vocab-table">
+
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Kosakata</th>
+                    <th>Arti</th>
+                    <th>Bab</th>
+                    <th>Progres</th>
+                    <th></th>
+                </tr>
+            </thead>
+
+            <tbody id="tableBody">
+                <!-- Diisi oleh script.js -->
+            </tbody>
+
+        </table>
+
+        <div id="tableEmpty" class="table-empty" hidden>
+            Kosakata tidak ditemukan.
+        </div>
+
+    </div>
+
+    <!-- Navigasi halaman -->
+    <footer class="table-footer">
+
+        <button
+            type="button"
+            id="tablePrev"
+            class="table-page-button"
+            aria-label="Halaman sebelumnya"
+        >
+            &#8249;
+        </button>
+
+        <div class="table-total">
+            <span class="table-book-icon">&#128214;</span>
+            <span id="tableTotal">Total Kosakata: 0</span>
+        </div>
+
+        <button
+            type="button"
+            id="tableNext"
+            class="table-page-button"
+            aria-label="Halaman berikutnya"
+        >
+            &#8250;
+        </button>
+
+    </footer>
+
+    <!-- Detail kosakata -->
+    <dialog id="vocabDetailDialog" class="vocab-dialog">
+
+        <form method="dialog">
+            <button
+                class="dialog-close"
+                aria-label="Tutup"
+            >
+                &times;
+            </button>
+        </form>
+
+        <p class="table-brand">RENN X JAPAN</p>
+
+        <h2 id="detailJapanese">あい</h2>
+        <p id="detailRomaji" class="detail-romaji">ai</p>
+        <p id="detailMeaning" class="detail-meaning">Cinta</p>
+
+        <div class="detail-meta">
+            <span id="detailChapter" class="chapter-badge">Bab 1</span>
+            <span id="detailProgress">Progres: 0%</span>
+        </div>
+
+        <button
+            type="button"
+            id="detailMarkLearned"
+            class="detail-learned-button"
+        >
+            Tandai sudah hafal
+        </button>
+
+    </dialog>
+
+</section>
+
+</main>
+
+<!-- SCRIPT UTAMA -->
+<script src="script.js"></script>
+
+</body>
+</html>
